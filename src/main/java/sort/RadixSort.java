@@ -51,7 +51,15 @@ public class RadixSort {
         return array;
     }
     
-    //获取字符串第k位字符所对应的ascii码序号
+    /**
+     * 
+     * @Description: 获取字符串第k位字符所对应的ascii码序号
+     * @Author chenpingping【chenpingping1@xiao100.com】
+     * @Date  2019年11月19日
+     * @param str 字符串
+     * @param k 字符串的第几位
+     * @return int 字符串str第k位字符所对应的ascii码序号
+     */
     private static int getCharIndex(String str, int k){
         //如果字符串长度小于k，直接返回0，相当于给不存在的位置补0
         if(str.length() <k +1 ){
