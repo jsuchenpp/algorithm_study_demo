@@ -18,6 +18,20 @@ public class RadixSort {
         System.out.println(Arrays.toString(radixSort(array, 3)));
     }
     
+    /**
+     * 
+     * @Description: 基数排序
+     * 时间复杂度：
+     * 原本计数排序的时间复杂度是O(N+M)，而基数排序总共执行了k次计数排序，所以时间复杂度是O(k(N+M))，其中k是字符串的最大长度，M是字符范围。
+     * 虽然基数排序的时间复杂度是O(k(N+M))，但由于字符串元素的长度k是一个固定常量，所以我们仍然认为它是一个线性排序算法。
+     * 空间复杂度：
+     * 由于基数排序的辅助数组是反复重用的，所以基数排序的空间复杂度和计数排序一样，都是O(N+M)，其中M是字符的取值范围大小。
+     * @Author chenpingping【chenpingping1@xiao100.com】
+     * @Date  2019年11月20日
+     * @param array 待排序的数组
+     * @param maxLength 数组中最长元素的长度
+     * @return 已排序的数组
+     */
     public static String[] radixSort(String[] array, int maxLength){
         // 排序结果数组，用于存储每一次按位排序的临时结果
         String[] sortedArray = new String[array.length];
